@@ -1,0 +1,341 @@
+/* ===================================
+   GLOBAL
+=================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fde3d3;
+    color: #222;
+}
+
+h1, h2, h3 {
+    font-family: "Fredoka", sans-serif;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2cb14a;
+    margin-bottom: 40px;
+}
+
+/* ===================================
+   HERO SECTION
+=================================== */
+#hero-section {
+    background: #d4e7ca;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Floating blob */
+.hero-blob {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: #f0524e;
+    border-radius: 60% 40% 55% 45%;
+    top: -100px;
+    right: -150px;
+    opacity: 0.25;
+    animation: floatBlob 6s infinite alternate ease-in-out;
+}
+
+@keyframes floatBlob {
+    from { transform: translateY(0) rotate(0deg); }
+    to   { transform: translateY(25px) rotate(4deg); }
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #2cb14a;
+    text-shadow: 3px 3px #fde3d3;
+}
+
+.hero-text p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+/* Hero Image */
+.hero-img img {
+    width: 350px;
+    filter: drop-shadow(0px 6px 8px rgba(0,0,0,0.2));
+    transition: 0.25s ease-in-out;
+}
+
+.hero-img img:hover {
+    transform: rotate(3deg) scale(1.05);
+}
+
+/* CTA Button */
+.cta-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    background: #f0524e;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 4px 4px 0px #2cb14a;
+    transition: 0.25s ease-in-out;
+}
+
+.cta-btn:hover {
+    transform: scale(1.07) translateY(-4px);
+    box-shadow: 6px 6px 0px #2cb14a;
+    filter: brightness(1.1);
+}
+
+/* ===================================
+   FEATURES SECTION
+=================================== */
+#features {
+    background: #fde3d3;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 0px #2cb14a;
+    transition: 0.25s ease-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 8px 8px 0px #2cb14a;
+}
+
+.feature-card h3 {
+    color: #f0524e;
+    margin-bottom: 10px;
+}
+
+/* ===================================
+   VISUAL SECTION
+=================================== */
+#visual-section {
+    text-align: center;
+}
+
+#visual-section img {
+    width: 60%;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px #f0524e;
+    transition: 0.25s ease-in-out;
+}
+
+#visual-section img:hover {
+    transform: scale(1.05);
+}
+
+.visual-text {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* ===================================
+   INFORMATION SECTION
+=================================== */
+#info-section {
+    background: #d4e7ca;
+    border-radius: 20px;
+}
+
+.info-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 4px 4px 0px #2cb14a;
+    transition: 0.25s ease-in-out;
+}
+
+.info-card:hover {
+    transform: translateY(-8px) rotate(1.5deg) scale(1.04);
+    box-shadow: 7px 7px 0px #2cb14a;
+}
+
+.info-details h3 {
+    margin-top: 20px;
+    color: #f0524e;
+}
+
+/* ===================================
+   CTA FINAL SECTION
+=================================== */
+#cta-section {
+    text-align: center;
+}
+
+#cta-section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.25s ease-in-out;
+}
+
+
+.cta-main {
+    background: #f0524e;
+    color: white;
+    box-shadow: 4px 4px 0px #2cb14a;
+}
+
+.cta-main:hover {
+    transform: scale(1.07) translateY(-4px);
+    box-shadow: 6px 6px 0px #2cb14a;
+    filter: brightness(1.1);
+}
+
+
+.cta-secondary {
+    background: #2cb14a;
+    color: white;
+    box-shadow: 4px 4px 0px #f0524e;
+}
+
+.cta-secondary:hover {
+    transform: scale(1.07) translateY(-4px);
+    box-shadow: 6px 6px 0px #f0524e;
+    filter: brightness(1.1);
+}
+
+
+#learn-more-btn:hover {
+    animation: wiggle 0.4s ease-in-out;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+#footer {
+    background: #f0524e;
+    text-align: center;
+    padding: 40px 10%;
+    color: white;
+}
+
+#footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: underline;
+}
+
+.socials {
+    margin: 15px 0;
+}
+
+/* ===================================
+   OPTIONAL NAV LINK EFFECTS
+=================================== */
+.nav-links a {
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    transform: translateY(-3px);
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: white;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* ===================================
+   FLOATING MUSHROOM DECORATIONS
+=================================== */
+.floating-mushroom {
+    position: fixed; 
+    width: 60px;
+    height: 60px;
+    background-image: url("images/mushroom-icon.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;     
+    z-index: 9999; 
+    pointer-events: none; 
+    animation: drift 12s infinite ease-in-out alternate;
+}
+
+.m1 { top: 10%; left: 4%; animation-duration: 13s; }
+.m2 { top: 60%; left: 8%; animation-duration: 11s; }
+.m3 { top: 30%; right: 5%; animation-duration: 12s; }
+.m4 { bottom: 10%; right: 12%; animation-duration: 14s; }
+
+@keyframes drift {
+    0%   { transform: translateY(0) rotate(0deg); }
+    50%  { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0) rotate(-5deg); }
+}
